@@ -16,7 +16,7 @@ class CashRegister
       self.items << item
       count += 1
     end
-    self.transaction << price
+    self.transaction << price*quantity
   end
 
   def apply_discount
