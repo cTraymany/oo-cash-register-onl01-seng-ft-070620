@@ -29,7 +29,7 @@ class CashRegister
   end
   
   def void_last_transaction
-    self.items.pop
+    self.items.delete_at[-1]
     self.total -= self.transaction[-1]
     self.total == 0.0 if self.items.empty?
     binding.pry
