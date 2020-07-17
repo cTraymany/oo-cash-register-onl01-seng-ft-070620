@@ -33,6 +33,7 @@ class CashRegister
     self.items
     self.total -= self.transaction[-1]
     self.total == 0.0 if self.items.empty?
+    binding.pry
   end
 
 end
