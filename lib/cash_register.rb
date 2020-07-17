@@ -14,6 +14,7 @@ class CashRegister
     count = 0
     until count == quantity
       self.items << item
+      self.transaction << price
       count += 1
     end
   end
